@@ -1,0 +1,3 @@
+/mnt/c/Nik/Scripts/mpi_helloworld/cmake-build-debug/CMakeFiles/mpi_helloworld.dir
+/mnt/c/Nik/Scripts/mpi_helloworld/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Nik/Scripts/mpi_helloworld/cmake-build-debug/CMakeFiles/rebuild_cache.dir

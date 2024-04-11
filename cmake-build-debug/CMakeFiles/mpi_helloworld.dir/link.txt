@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/mpi_helloworld.dir/main.cpp.o CMakeFiles/mpi_helloworld.dir/tests.cpp.o CMakeFiles/mpi_helloworld.dir/task1_hello_world_openmp.cpp.o CMakeFiles/mpi_helloworld.dir/task2_1nsum_openmp.cpp.o -o mpi_helloworld 
