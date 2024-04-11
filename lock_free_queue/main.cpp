@@ -150,6 +150,16 @@ void* mutex_test() {
     pthread_join(thread1, NULL);
 }
 
+void queue_release(queue_t* queue) {
+    node_t* node = queue->head;
+    while (node != NULL) {
+        node_t* next = node->next;
+        free(node);
+        node = next;
+    }
+    free(queue);
+}
+
 
 int main() {
     pthread_mutex_init(&mutex, NULL);
@@ -170,7 +180,7 @@ int main() {
     gettimeofday(&tafter, NULL);
     timersub(&tafter, &tbefore, &telapsed);
     printf(" Elapsed: %ld.%06ld\n", (long int)telapsed.tv_sec, (long int)telapsed.tv_usec);
-
+    queue_release(queue);
 
     return 0;
 }
