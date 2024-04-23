@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/example.dir/test.cpp.o -o example  ../_deps/matplotplusplus-build/source/matplot/libmatplot.a ../_deps/matplotplusplus-build/source/3rd_party/libnodesoup.a /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.a 

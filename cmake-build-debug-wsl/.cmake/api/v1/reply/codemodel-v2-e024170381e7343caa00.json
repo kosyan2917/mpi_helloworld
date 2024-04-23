@@ -1,0 +1,206 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "matrix_multiplication",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-matrix_multiplication-Debug-7ccf0eccf756ba494182.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "matrix_multiplication",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "_deps/matplotplusplus-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.matplotplusplus-build-Debug-722894824bcab83ae146.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug-wsl/_deps/matplotplusplus-src"
+				},
+				{
+					"build" : "_deps/matplotplusplus-build/source",
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.matplotplusplus-build.source-Debug-5ac56e0ae55857ff5240.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug-wsl/_deps/matplotplusplus-src/source"
+				},
+				{
+					"build" : "_deps/matplotplusplus-build/source/3rd_party",
+					"jsonFile" : "directory-_deps.matplotplusplus-build.source.3rd_party-Debug-15fbe35be43bf52cbb5e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug-wsl/_deps/matplotplusplus-src/source/3rd_party",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "_deps/matplotplusplus-build/source/matplot",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.matplotplusplus-build.source.matplot-Debug-59df43e796efee9e8fed.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug-wsl/_deps/matplotplusplus-src/source/matplot",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mpi_helloworld",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "example",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "Matplot++",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "example::@4db293d7b5587faad84b",
+					"jsonFile" : "target-example-Debug-225967bd98dddf8634a3.json",
+					"name" : "example",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "matplot::@1a212f9e42d2a4237136",
+					"jsonFile" : "target-matplot-Debug-256e24d4ce46be7cf41b.json",
+					"name" : "matplot",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpi_helloworld::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpi_helloworld-Debug-07a09f8cd29dfdf11712.json",
+					"name" : "mpi_helloworld",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "nodesoup::@c7e29b13f31b6afc69a3",
+					"jsonFile" : "target-nodesoup-Debug-585a259852f494e413fa.json",
+					"name" : "nodesoup",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-debug-wsl",
+		"source" : "/mnt/e/Nik/Scripts/mpi_helloworld"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

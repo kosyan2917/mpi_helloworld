@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/
+cmake_ninja_workdir = E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target mpi_helloworld
 
@@ -49,13 +49,11 @@ cmake_ninja_workdir = C$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/
 
 build cmake_object_order_depends_target_mpi_helloworld: phony || CMakeFiles/mpi_helloworld.dir
 
-build CMakeFiles/mpi_helloworld.dir/main.cpp.obj: CXX_COMPILER__mpi_helloworld_unscanned_Debug C$:/Nik/Scripts/mpi_helloworld/main.cpp || cmake_object_order_depends_target_mpi_helloworld
+build CMakeFiles/mpi_helloworld.dir/main.cpp.obj: CXX_COMPILER__mpi_helloworld_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/main.cpp || cmake_object_order_depends_target_mpi_helloworld
   DEP_FILE = CMakeFiles\mpi_helloworld.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mpi_helloworld.dir
   OBJECT_FILE_DIR = CMakeFiles\mpi_helloworld.dir
-  TARGET_COMPILE_PDB = CMakeFiles\mpi_helloworld.dir\
-  TARGET_PDB = mpi_helloworld.pdb
 
 
 # =============================================================================
@@ -71,17 +69,16 @@ build mpi_helloworld.exe: CXX_EXECUTABLE_LINKER__mpi_helloworld_Debug CMakeFiles
   OBJECT_DIR = CMakeFiles\mpi_helloworld.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\mpi_helloworld.dir\
   TARGET_FILE = mpi_helloworld.exe
   TARGET_IMPLIB = libmpi_helloworld.dll.a
-  TARGET_PDB = mpi_helloworld.pdb
+  TARGET_PDB = mpi_helloworld.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Nik\Scripts\mpi_helloworld\cmake-build-debug && "C:\Nik\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,17 +89,842 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Nik\Scripts\mpi_helloworld\cmake-build-debug && "C:\Nik\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Nik\Scripts\mpi_helloworld -BC:\Nik\Scripts\mpi_helloworld\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\Nik\Scripts\mpi_helloworld -BE:\Nik\Scripts\mpi_helloworld\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/Nik/Scripts/mpi_helloworld/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target example
+
+
+#############################################
+# Order-only phony target for example
+
+build cmake_object_order_depends_target_example: phony || cmake_object_order_depends_target_matplot cmake_object_order_depends_target_nodesoup
+
+build matrix_multiplication/CMakeFiles/example.dir/main.cpp.obj: CXX_COMPILER__example_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/matrix_multiplication/main.cpp || cmake_object_order_depends_target_example
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX
+  DEP_FILE = matrix_multiplication\CMakeFiles\example.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot
+  OBJECT_DIR = matrix_multiplication\CMakeFiles\example.dir
+  OBJECT_FILE_DIR = matrix_multiplication\CMakeFiles\example.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target example
+
+
+#############################################
+# Link the executable matrix_multiplication\example.exe
+
+build matrix_multiplication/example.exe: CXX_EXECUTABLE_LINKER__example_Debug matrix_multiplication/CMakeFiles/example.dir/main.cpp.obj | _deps/matplotplusplus-build/source/matplot/libmatplot.a _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a || _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a _deps/matplotplusplus-build/source/matplot/libmatplot.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/matplotplusplus-build/source/matplot/libmatplot.a  -lgdi32  _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = matrix_multiplication\CMakeFiles\example.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = matrix_multiplication\example.exe
+  TARGET_IMPLIB = matrix_multiplication\libexample.dll.a
+  TARGET_PDB = example.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build matrix_multiplication/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\matrix_multiplication && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build matrix_multiplication/edit_cache: phony matrix_multiplication/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build matrix_multiplication/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\matrix_multiplication && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\Nik\Scripts\mpi_helloworld -BE:\Nik\Scripts\mpi_helloworld\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build matrix_multiplication/rebuild_cache: phony matrix_multiplication/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build matrix_multiplication/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build matrix_multiplication/CMakeFiles/install.util: CUSTOM_COMMAND matrix_multiplication/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\matrix_multiplication && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build matrix_multiplication/install: phony matrix_multiplication/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build matrix_multiplication/CMakeFiles/install/local.util: CUSTOM_COMMAND matrix_multiplication/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\matrix_multiplication && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build matrix_multiplication/install/local: phony matrix_multiplication/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build matrix_multiplication/CMakeFiles/install/strip.util: CUSTOM_COMMAND matrix_multiplication/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\matrix_multiplication && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build matrix_multiplication/install/strip: phony matrix_multiplication/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/Nik/Scripts/mpi_helloworld/matrix_multiplication/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/matplotplusplus-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/matplotplusplus-build/edit_cache: phony _deps/matplotplusplus-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/matplotplusplus-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\Nik\Scripts\mpi_helloworld -BE:\Nik\Scripts\mpi_helloworld\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/rebuild_cache: phony _deps/matplotplusplus-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/matplotplusplus-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/matplotplusplus-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/matplotplusplus-build/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/install: phony _deps/matplotplusplus-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/matplotplusplus-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/matplotplusplus-build/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/install/local: phony _deps/matplotplusplus-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/matplotplusplus-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/matplotplusplus-build/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/install/strip: phony _deps/matplotplusplus-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/matplotplusplus-build/source/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/matplotplusplus-build/source/edit_cache: phony _deps/matplotplusplus-build/source/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/matplotplusplus-build/source/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\Nik\Scripts\mpi_helloworld -BE:\Nik\Scripts\mpi_helloworld\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/rebuild_cache: phony _deps/matplotplusplus-build/source/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/matplotplusplus-build/source/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/matplotplusplus-build/source/CMakeFiles/install.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/install: phony _deps/matplotplusplus-build/source/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/matplotplusplus-build/source/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/install/local: phony _deps/matplotplusplus-build/source/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/matplotplusplus-build/source/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/install/strip: phony _deps/matplotplusplus-build/source/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target nodesoup
+
+
+#############################################
+# Order-only phony target for nodesoup
+
+build cmake_object_order_depends_target_nodesoup: phony || _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/algebra.cpp.obj: CXX_COMPILER__nodesoup_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/algebra.cpp || cmake_object_order_depends_target_nodesoup
+  DEFINES = -D_USE_MATH_DEFINES
+  DEP_FILE = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src\algebra.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/fruchterman_reingold.cpp.obj: CXX_COMPILER__nodesoup_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/fruchterman_reingold.cpp || cmake_object_order_depends_target_nodesoup
+  DEFINES = -D_USE_MATH_DEFINES
+  DEP_FILE = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src\fruchterman_reingold.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/kamada_kawai.cpp.obj: CXX_COMPILER__nodesoup_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/kamada_kawai.cpp || cmake_object_order_depends_target_nodesoup
+  DEFINES = -D_USE_MATH_DEFINES
+  DEP_FILE = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src\kamada_kawai.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/layout.cpp.obj: CXX_COMPILER__nodesoup_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/layout.cpp || cmake_object_order_depends_target_nodesoup
+  DEFINES = -D_USE_MATH_DEFINES
+  DEP_FILE = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src\layout.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/nodesoup.cpp.obj: CXX_COMPILER__nodesoup_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/nodesoup.cpp || cmake_object_order_depends_target_nodesoup
+  DEFINES = -D_USE_MATH_DEFINES
+  DEP_FILE = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src\nodesoup.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir\nodesoup\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target nodesoup
+
+
+#############################################
+# Link the static library _deps\matplotplusplus-build\source\3rd_party\libnodesoup.a
+
+build _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a: CXX_STATIC_LIBRARY_LINKER__nodesoup_Debug _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/algebra.cpp.obj _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/fruchterman_reingold.cpp.obj _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/kamada_kawai.cpp.obj _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/layout.cpp.obj _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/nodesoup.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\matplotplusplus-build\source\3rd_party\CMakeFiles\nodesoup.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\matplotplusplus-build\source\3rd_party\libnodesoup.a
+  TARGET_PDB = nodesoup.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\3rd_party && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/matplotplusplus-build/source/3rd_party/edit_cache: phony _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\3rd_party && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\Nik\Scripts\mpi_helloworld -BE:\Nik\Scripts\mpi_helloworld\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/3rd_party/rebuild_cache: phony _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/matplotplusplus-build/source/3rd_party/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/install.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/3rd_party/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\3rd_party && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/3rd_party/install: phony _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/3rd_party/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\3rd_party && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/3rd_party/install/local: phony _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/3rd_party/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\3rd_party && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/3rd_party/install/strip: phony _deps/matplotplusplus-build/source/3rd_party/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target matplot
+
+
+#############################################
+# Order-only phony target for matplot
+
+build cmake_object_order_depends_target_matplot: phony || cmake_object_order_depends_target_nodesoup
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/backend_interface.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/backend/backend_interface.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\backend\backend_interface.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\backend
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/gnuplot.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/backend/gnuplot.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\backend\gnuplot.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\backend
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/backend_registry.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/backend/backend_registry.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\backend\backend_registry.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\backend
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axes_type.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/core/axes_type.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core\axes_type.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axes_object.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/core/axes_object.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core\axes_object.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axis_type.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/core/axis_type.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core\axis_type.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/figure_type.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/core/figure_type.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core\figure_type.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/figure_registry.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/core/figure_registry.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core\figure_registry.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/legend.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/core/legend.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core\legend.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/line_spec.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/core/line_spec.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core\line_spec.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\core
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/colors.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/colors.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\colors.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/common.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/common.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\common.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/contourc.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/contourc.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\contourc.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/popen.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/popen.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\popen.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_cities.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/world_cities.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\world_cities.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_10m.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/world_map_10m.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\world_map_10m.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_50m.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/world_map_50m.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\world_map_50m.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_110m.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/world_map_110m.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util\world_map_110m.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\util
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/bars.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/bars.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\bars.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/box_chart.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/box_chart.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\box_chart.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/circles.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/circles.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\circles.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/contours.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/contours.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\contours.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/error_bar.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/error_bar.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\error_bar.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/filled_area.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/filled_area.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\filled_area.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/function_line.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/function_line.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\function_line.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/histogram.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/histogram.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\histogram.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/labels.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/labels.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\labels.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/line.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/line.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\line.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/matrix.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/matrix.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\matrix.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/network.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/network.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\network.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/parallel_lines.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/parallel_lines.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\parallel_lines.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/stair.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/stair.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\stair.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/string_function.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/string_function.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\string_function.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/surface.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/surface.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\surface.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/vectors.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/axes_objects/vectors.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects\vectors.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\axes_objects
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/freestanding/axes_functions.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/freestanding/axes_functions.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\freestanding\axes_functions.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\freestanding
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/freestanding/histcounts.cpp.obj: CXX_COMPILER__matplot_unscanned_Debug E$:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/freestanding/histcounts.cpp || cmake_object_order_depends_target_matplot
+  DEFINES = -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -Dcimg_display=2
+  DEP_FILE = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\freestanding\histcounts.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -pedantic -Werror
+  INCLUDES = -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source -IE:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/cimg -isystem E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  OBJECT_FILE_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir\freestanding
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target matplot
+
+
+#############################################
+# Link the static library _deps\matplotplusplus-build\source\matplot\libmatplot.a
+
+build _deps/matplotplusplus-build/source/matplot/libmatplot.a: CXX_STATIC_LIBRARY_LINKER__matplot_Debug _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/backend_interface.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/gnuplot.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/backend_registry.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axes_type.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axes_object.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axis_type.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/figure_type.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/figure_registry.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/legend.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/line_spec.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/colors.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/common.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/contourc.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/popen.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_cities.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_10m.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_50m.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_110m.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/bars.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/box_chart.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/circles.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/contours.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/error_bar.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/filled_area.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/function_line.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/histogram.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/labels.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/line.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/matrix.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/network.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/parallel_lines.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/stair.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/string_function.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/surface.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/vectors.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/freestanding/axes_functions.cpp.obj _deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/freestanding/histcounts.cpp.obj || _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\matplotplusplus-build\source\matplot\CMakeFiles\matplot.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\matplotplusplus-build\source\matplot\libmatplot.a
+  TARGET_PDB = matplot.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\matplot && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/matplotplusplus-build/source/matplot/edit_cache: phony _deps/matplotplusplus-build/source/matplot/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\matplot && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SE:\Nik\Scripts\mpi_helloworld -BE:\Nik\Scripts\mpi_helloworld\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/matplot/rebuild_cache: phony _deps/matplotplusplus-build/source/matplot/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/matplotplusplus-build/source/matplot/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/install.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/matplot/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\matplot && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/matplot/install: phony _deps/matplotplusplus-build/source/matplot/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/matplot/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\matplot && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/matplot/install/local: phony _deps/matplotplusplus-build/source/matplot/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/matplotplusplus-build/source/matplot/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/matplotplusplus-build/source/matplot/all
+  COMMAND = cmd.exe /C "cd /D E:\Nik\Scripts\mpi_helloworld\cmake-build-debug\_deps\matplotplusplus-build\source\matplot && "D:\CLion 2023.2.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/matplotplusplus-build/source/matplot/install/strip: phony _deps/matplotplusplus-build/source/matplot/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
 
+build example: phony matrix_multiplication/example.exe
+
+build example.exe: phony matrix_multiplication/example.exe
+
+build libmatplot.a: phony _deps/matplotplusplus-build/source/matplot/libmatplot.a
+
+build libnodesoup.a: phony _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a
+
+build matplot: phony _deps/matplotplusplus-build/source/matplot/libmatplot.a
+
 build mpi_helloworld: phony mpi_helloworld.exe
+
+build nodesoup: phony _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a
 
 # =============================================================================
 # Folder targets.
@@ -110,9 +932,44 @@ build mpi_helloworld: phony mpi_helloworld.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Nik/Scripts/mpi_helloworld/cmake-build-debug
+# Folder: E:/Nik/Scripts/mpi_helloworld/cmake-build-debug
 
-build all: phony mpi_helloworld.exe
+build all: phony mpi_helloworld.exe matrix_multiplication/all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build
+
+build _deps/matplotplusplus-build/all: phony _deps/matplotplusplus-build/source/all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source
+
+build _deps/matplotplusplus-build/source/all: phony _deps/matplotplusplus-build/source/3rd_party/all _deps/matplotplusplus-build/source/matplot/all
+
+# =============================================================================
+
+#############################################
+# Folder: E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/3rd_party
+
+build _deps/matplotplusplus-build/source/3rd_party/all: phony _deps/matplotplusplus-build/source/3rd_party/libnodesoup.a
+
+# =============================================================================
+
+#############################################
+# Folder: E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/_deps/matplotplusplus-build/source/matplot
+
+build _deps/matplotplusplus-build/source/matplot/all: phony _deps/matplotplusplus-build/source/matplot/libmatplot.a
+
+# =============================================================================
+
+#############################################
+# Folder: E:/Nik/Scripts/mpi_helloworld/cmake-build-debug/matrix_multiplication
+
+build matrix_multiplication/all: phony matrix_multiplication/example.exe
 
 # =============================================================================
 # Built-in targets
@@ -121,14 +978,14 @@ build all: phony mpi_helloworld.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Nik/Scripts/mpi_helloworld/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckFunctionExists.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckSymbolExists.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindBLAS.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindGit.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindJPEG.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindLAPACK.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPkgConfig.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindTIFF.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindZLIB.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/GenerateExportHeader.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/exportheader.cmake.in E$:/Nik/Scripts/mpi_helloworld/CMakeLists.txt E$:/Nik/Scripts/mpi_helloworld/matrix_multiplication/CMakeLists.txt _deps/matplotplusplus-src/CMakeLists.txt _deps/matplotplusplus-src/cmake/FindFFTW.cmake _deps/matplotplusplus-src/cmake/FindOpenCV.cmake _deps/matplotplusplus-src/cmake/functions.cmake _deps/matplotplusplus-src/cmake/functions/ensure_build_type.cmake _deps/matplotplusplus-src/cmake/functions/link_external_libraries.cmake _deps/matplotplusplus-src/cmake/functions/project_flags.cmake _deps/matplotplusplus-src/cmake/functions/sanitizers.cmake _deps/matplotplusplus-src/cmake/functions/target_options.cmake _deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt _deps/matplotplusplus-src/source/CMakeLists.txt _deps/matplotplusplus-src/source/matplot/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Nik/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Nik/Scripts/mpi_helloworld/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckFunctionExists.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckSymbolExists.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindBLAS.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindGit.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindJPEG.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindLAPACK.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPkgConfig.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindTIFF.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/FindZLIB.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/GenerateExportHeader.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/SelectLibraryConfigurations.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake D$:/CLion$ 2023.2.3/bin/cmake/win/x64/share/cmake-3.26/Modules/exportheader.cmake.in E$:/Nik/Scripts/mpi_helloworld/CMakeLists.txt E$:/Nik/Scripts/mpi_helloworld/matrix_multiplication/CMakeLists.txt _deps/matplotplusplus-src/CMakeLists.txt _deps/matplotplusplus-src/cmake/FindFFTW.cmake _deps/matplotplusplus-src/cmake/FindOpenCV.cmake _deps/matplotplusplus-src/cmake/functions.cmake _deps/matplotplusplus-src/cmake/functions/ensure_build_type.cmake _deps/matplotplusplus-src/cmake/functions/link_external_libraries.cmake _deps/matplotplusplus-src/cmake/functions/project_flags.cmake _deps/matplotplusplus-src/cmake/functions/sanitizers.cmake _deps/matplotplusplus-src/cmake/functions/target_options.cmake _deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt _deps/matplotplusplus-src/source/CMakeLists.txt _deps/matplotplusplus-src/source/matplot/CMakeLists.txt: phony
 
 
 #############################################

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/matplotplusplus-build",
+		"source" : "cmake-build-release-wsl/_deps/matplotplusplus-src"
+	}
+}

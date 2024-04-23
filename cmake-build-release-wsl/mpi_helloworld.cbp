@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mpi_helloworld"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-release-wsl\;CMake Files\cmake-build-release-wsl\_deps\;CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\;CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\;CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\functions\;CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\source\;CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\source\3rd_party\;CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\source\matplot\;CMake Files\matrix_multiplication\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mpi_helloworld">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/mpi_helloworld" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 mpi_helloworld"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mpi_helloworld/fast">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/mpi_helloworld" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 mpi_helloworld/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 example"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example/fast">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 example/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/matrix_multiplication/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nodesoup">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/libnodesoup.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 nodesoup"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nodesoup/fast">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/libnodesoup.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 nodesoup/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matplot">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/libmatplot.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DMATPLOT_HAS_FBUFSIZE"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add option="-Dcimg_display=0"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/cimg"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 matplot"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matplot/fast">
+				<Option output="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/libmatplot.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DMATPLOT_HAS_FBUFSIZE"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add option="-Dcimg_display=0"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/cimg"/>
+					<Add directory="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 matplot/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-build/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/include/nodesoup.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/algebra.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/algebra.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/fruchterman_reingold.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/fruchterman_reingold.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/kamada_kawai.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/kamada_kawai.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/layout.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/layout.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/nodesoup/src/nodesoup.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/bars.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/bars.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/box_chart.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/box_chart.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/circles.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/circles.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/contours.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/contours.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/error_bar.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/error_bar.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/filled_area.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/filled_area.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/function_line.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/function_line.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/histogram.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/histogram.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/labels.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/labels.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/line.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/line.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/matrix.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/matrix.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/network.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/network.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/parallel_lines.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/parallel_lines.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/stair.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/stair.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/string_function.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/string_function.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/surface.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/surface.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/vectors.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/axes_objects/vectors.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/backend/backend_interface.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/backend/backend_interface.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/backend/backend_registry.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/backend/backend_registry.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/backend/gnuplot.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/backend/gnuplot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/axes_object.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/axes_object.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/axes_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/axes_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/axis_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/axis_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/figure_registry.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/figure_registry.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/figure_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/figure_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/legend.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/legend.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/line_spec.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/core/line_spec.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/freestanding/axes_functions.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/freestanding/axes_functions.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/freestanding/axes_lim.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/freestanding/histcounts.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/freestanding/histcounts.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/freestanding/plot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/matplot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/colors.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/colors.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/common.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/common.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/concepts.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/contourc.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/contourc.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/geodata.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/handle_types.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/keywords.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/popen.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/popen.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/type_traits.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/world_cities.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/world_map_10m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/world_map_110m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/util/world_map_50m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/main.cpp">
+			<Option target="mpi_helloworld"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/matrix_multiplication/test.cpp">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/FindFFTW.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/FindOpenCV.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/functions.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/functions/ensure_build_type.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\functions\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/functions/link_external_libraries.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\functions\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/functions/project_flags.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\functions\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/functions/sanitizers.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\functions\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/cmake/functions/target_options.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\cmake\functions\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\source\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\source\3rd_party\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/cmake-build-release-wsl/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\matplotplusplus-src\source\matplot\"/>
+		</Unit>
+		<Unit filename="/mnt/e/Nik/Scripts/mpi_helloworld/matrix_multiplication/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matrix_multiplication\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
